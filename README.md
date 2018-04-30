@@ -2,6 +2,8 @@
 
 The role to configure user environment.
 
+[![Build Status](https://travis-ci.org/0x4e3/osx-bootstrap-user.svg?branch=master)](https://travis-ci.org/0x4e3/osx-bootstrap-user)
+
 ## Requirements
 
 You should have ```homebrew``` installed.
