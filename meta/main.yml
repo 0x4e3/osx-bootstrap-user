@@ -1,12 +1,8 @@
 galaxy_info:
   author: Alexander Lebedev
   description: Ansible role for Mac OS bootstrap —- node packages.
-  company: 0x4e3
-
   license: BSD
-
-  min_ansible_version: 1.2
-
+  min_ansible_version: 1.8
   platforms:
   - name: MacOSX
     versions:
