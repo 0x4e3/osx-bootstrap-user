@@ -1,0 +1,30 @@
+---
+- name: Install zsh with Homebrew
+  homebrew: name=zsh state=latest
+
+- name: Add valid zsh to /etc/shells
+  lineinfile:
+    line: /usr/local/bin/zsh
+    dest: /etc/shells
+    state: present
+  register: zsh_enabled
+  become: yes
+  become_method: sudo
+
+- name: Set user shell to zsh
+  command: chsh -s /usr/local/bin/zsh
+  when: zsh_enabled.changed
+
+- name: Install oh-my-zsh
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh.git
+    dest: "~/.oh-my-zsh"
+    update: yes
+  when: user_use_oh_my_zsh
+
+- name: Configure oh-my-zsh
+  template:
+    src: zshrc.j2
+    dest: "~/.zshrc"
+    backup: yes
+  when: user_use_oh_my_zsh

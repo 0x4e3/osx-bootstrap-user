@@ -1,0 +1,21 @@
+---
+user_use_oh_my_zsh: true
+
+oh_my_zsh_theme: bira
+oh_my_zsh_update: no
+oh_my_zsh_plugins: []
+oh_my_zsh_case_sensitive: false
+oh_my_zsh_disable_update_prompt: false
+oh_my_zsh_disable_auto_update: true
+oh_my_zsh_update_days: 7
+oh_my_zsh_disable_ls_colors: false
+oh_my_zsh_disable_auto_title: false
+oh_my_zsh_disable_correction: true
+oh_my_zsh_completion_waiting_dots: false
+oh_my_zsh_disable_untracked_files_dirty: true
+oh_my_zsh_hash_directories: []
+oh_my_zsh_aliases: []
+
+user_exports: []
+
+user_use_pyenv: true
