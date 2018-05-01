@@ -3,6 +3,7 @@
 The role to configure user environment.
 
 [![Build Status](https://travis-ci.org/0x4e3/osx-bootstrap-user.svg?branch=master)](https://travis-ci.org/0x4e3/osx-bootstrap-user)
+[![GitHub license](https://img.shields.io/github/license/0x4e3/osx-bootstrap-user.svg)](https://github.com/0x4e3/osx-bootstrap-user/blob/master/LICENSE)
 
 ## Requirements
 
@@ -26,6 +27,8 @@ You should have ```homebrew``` installed.
 * ```oh_my_zsh_aliases``` -- list of aliases (ex. ```zshconfig="vim ~/.zshrc"```); default is ```[]```
 * ```user_exports``` -- list of custom user exports (ex. ```PATH="/usr/local/sbin:$PATH"```); default is ```[]```
 * ```user_use_pyenv``` -- default is ```true```
+* ```git_user_name``` -- git global user name; default is ```Alexander Lebedev```
+* ```git_user_email``` -- git global user email; default is ```lebedev@0x4e3.ru```
 
 ## Dependencies
 
@@ -45,6 +48,7 @@ You should have ```homebrew``` installed.
 
 ```vars/user.yml```
 ```yml
+---
 user_exports:
 - PATH="/usr/local/sbin:$PATH"
 
@@ -61,7 +65,3 @@ oh_my_zsh_aliases:
 - zshconfig="vim ~/.zshrc"
 - zshupdate="source ~/.zshrc"
 ```
-
-## License
-
-BSD

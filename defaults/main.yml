@@ -19,3 +19,6 @@ oh_my_zsh_aliases: []
 user_exports: []
 
 user_use_pyenv: true
+
+git_user_name: 'Alexander Lebedev'
+git_user_email: 'lebedev@0x4e3.ru'
