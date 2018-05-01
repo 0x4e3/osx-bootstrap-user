@@ -28,3 +28,9 @@
     dest: "~/.zshrc"
     backup: yes
   when: user_use_oh_my_zsh
+
+- name: Set git username
+  shell: git config --global user.name "{{ git_user_name}}"
+
+- name: Set git email
+  shell: git config --global user.email "{{ git_user_email}}"
